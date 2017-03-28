@@ -16,5 +16,10 @@ public class Employee implements Address {
 	public String companyAddress() {
 		return "Gurgaon";
 	}
+	
+	public String companyAddressThrowing() {
+		throw new RuntimeException();
+	}
+	
 
 }
