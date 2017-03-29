@@ -20,6 +20,9 @@ public class Employee implements Address {
 	public String companyAddressThrowing() {
 		throw new RuntimeException();
 	}
+public String companyAddressowing() {
+		throw new RuntimeException();
+	}
 	
 
 }
