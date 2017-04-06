@@ -4,6 +4,7 @@
     <groupId>com.dls.coaching.build</groupId>
     <artifactId>dls.coaching.build</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../dls.coaching.build/pom.xml</relativePath>
   </parent>
   <groupId>com.dls.coaching.dao</groupId>
   <artifactId>dls.coaching.dao</artifactId>

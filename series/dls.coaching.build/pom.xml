@@ -3,4 +3,12 @@
   <groupId>com.dls.coaching.build</groupId>
   <artifactId>dls.coaching.build</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>../dls.coaching.aop</module>
+  	<module>../dls.coaching.dao</module>
+  	<module>../dls.coaching.security</module>
+  	<module>../dls.coaching.service</module>
+  	<module>../dls.coaching.web</module>
+  </modules>
 </project>
