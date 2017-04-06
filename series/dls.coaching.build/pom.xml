@@ -1,14 +1,27 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.dls.coaching.build</groupId>
-  <artifactId>dls.coaching.build</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  <modules>
-  	<module>../dls.coaching.aop</module>
-  	<module>../dls.coaching.dao</module>
-  	<module>../dls.coaching.security</module>
-  	<module>../dls.coaching.service</module>
-  	<module>../dls.coaching.web</module>
-  </modules>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.dls.coaching.build</groupId>
+	<artifactId>dls.coaching.build</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>../dls.coaching.aop</module>
+		<module>../dls.coaching.dao</module>
+		<module>../dls.coaching.security</module>
+		<module>../dls.coaching.service</module>
+		<module>../dls.coaching.web</module>
+	</modules>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>4.3.7.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.1.5.Final</version>
+		</dependency>
+	</dependencies>
 </project>
