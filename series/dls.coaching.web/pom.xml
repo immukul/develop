@@ -9,4 +9,14 @@
   <groupId>com.dls.coaching.web</groupId>
   <artifactId>dls.coaching.web</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>com.dls.coaching.service</groupId>
+  			<artifactId>dls.coaching.service</artifactId>
+  			<version>0.0.1-SNAPSHOT</version>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement>
 </project>
