@@ -1,25 +1,36 @@
 package com.test.series.controllers;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 import com.test.series.pojo.Questions;
 import com.test.series.pojo.SubjectEnum;
 
-@Controller
-@Path(value="/test")
+
+@RestController
+@RequestMapping(value = "/test")
 public class TestSeriesController {
 
-	@Path(value = "/testQuestions")
-	@GET
-	public Questions testQuestions(@RequestParam SubjectEnum subject){
+	@RequestMapping(value = "/questions", method = RequestMethod.GET)
+	public Questions testQuestions(@RequestParam SubjectEnum subject) {
+
 		return null;
-		
+
 	}
-	
-	
-	
+
+	@RequestMapping(value = "/uploadQuestions", headers = ("content-type=multipart/*"), method = RequestMethod.POST)
+	public Questions uploadQuestions(@RequestParam("file") MultipartFile inputFile) {
+
+		return null;
+
+	}
+
+	@RequestMapping(value = "/result", method = RequestMethod.GET)
+	public Questions testResult() {
+
+		return null;
+
+	}
 }
