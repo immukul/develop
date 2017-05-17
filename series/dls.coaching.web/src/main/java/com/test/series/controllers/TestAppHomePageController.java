@@ -8,13 +8,11 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 @RequestMapping(value = "/app")
 public class TestAppHomePageController {
-
-	@RequestMapping(value = "/application", method = RequestMethod.GET )
-	public String testApplication() {
+	@RequestMapping(value = "/home", method = RequestMethod.GET )
+	public ModelAndView homeApp() {
 		System.out.println(" app controller working----" );
 		ModelAndView mav = new ModelAndView();
-		mav.setViewName("NewFile");
-		return "NewFile";
+		mav.setViewName("/html/home.html");
+		return mav;
 	}
-	
 }

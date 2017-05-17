@@ -11,6 +11,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.test.series.pojo.Options;
 import com.test.series.pojo.Question;
 import com.test.series.pojo.Questions;
 import com.test.series.service.inter.ITestSeriesService;
@@ -29,8 +30,24 @@ public class TestSeriesService implements ITestSeriesService {
 		}
 		List<Question> questionList = new ArrayList<Question>();
 		Question question = new Question ();
+		Options options = new Options(); 
+		Question question1 = new Question ();
+		Options options1 = new Options(); 
+		options.setOption1("Programming Language");
+		options.setOption1("Car");
+		options.setOption1("Coffee");
+		options.setOption1("Country");
 		question.setQuestionText("What is Java?");
+		question.setOptions(options);
+		
+		options1.setOption1("Programming Language");
+		options1.setOption1("Car");
+		options1.setOption1("Coffee");
+		options1.setOption1("Country");
+		question.setQuestionText("What is Java?");
+		question1.setOptions(options1);
 		questionList.add(question);
+		questionList.add(question1);
 		questions.setQuestions(questionList);
 		return questions;
 	}

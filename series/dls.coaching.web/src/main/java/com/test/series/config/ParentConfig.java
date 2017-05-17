@@ -17,11 +17,11 @@ public class ParentConfig extends WebMvcConfigurerAdapter {
 	public InternalResourceViewResolver viewResolver() {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
 		resolver.setPrefix("");
-		resolver.setSuffix(".jsp");
+		resolver.setSuffix("");
 		return resolver;
 	}
 	@Override
-	public void addResourceHandlers(final ResourceHandlerRegistry registry) {
-	    registry.addResourceHandler("/WEB-INF/**").addResourceLocations("/WEB-INF/html/");
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+	    registry.addResourceHandler("/html/**").addResourceLocations("/WEB-INF/html/");
 	}
 }
